@@ -1,7 +1,11 @@
 
 .container {
   color: rgb(0, 0, 0);
-  padding: 40px;
+  /* padding: 40px; */
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: Arial;
   text-align: center;
 }
@@ -45,6 +49,7 @@ a:active {
 
 .navigation--link{
   color: #000;
+  display: inline-block;
 }
 
 .navigation-main{
@@ -52,9 +57,13 @@ a:active {
   font-weight: bold;
 }
 
+.account{
+  font-size: 2rem
+}
+
 .register-button{
   display: contents;
-  color: #ff0000;
+  font-weight: bolder;
 }
 
 .header{
@@ -113,6 +122,11 @@ textarea:focus {
   width: 400px;
   width: -webkit-fill-available;
   overflow: auto;
+}
+
+.content-right{
+  line-height: 1rem;
+  margin-bottom: 0px;
 }
 
 

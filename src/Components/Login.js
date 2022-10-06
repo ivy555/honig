@@ -7,12 +7,6 @@ import { cart } from 'react-icons-kit/entypo/cart';
 import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faUserTie } from '@fortawesome/fontawesome-free-solid';
 
-
-
-
-
-
-
 export const Login = (props) => {
 
     const [email, setEmail] = useState('');
@@ -50,7 +44,7 @@ export const Login = (props) => {
             <div class="top_text">Willkommen bei Honigfinder - Deiner regionalen Honig-Plattform</div>
             <div class="account-menu">
             <a class="navigation--link"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
-            <a class="navigation--link"> <span> <Link to="shoppingcart">Warenkorb <FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
+            <a class="navigation--link"> <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
             </div>   
         </div>
 
@@ -58,7 +52,7 @@ export const Login = (props) => {
             <a class="navigation--link" href="honigliebhaber" title="Für Honigliebhaber" aria-label="Für Honigliebhaber" itemprop="url"><span itemprop="name"><FontAwesomeIcon icon={ faHandHoldingHeart}   size="xl"> </FontAwesomeIcon> Für Honigliebhaber</span></a> <span> &nbsp;</span>
             <a class="navigation--link" href="unternehmen" title="Für Unternehmen" aria-label="Für Unternehmen" itemprop="url"><span itemprop="name"><FontAwesomeIcon icon={ faUserTie }   size="xl"> </FontAwesomeIcon> Für Unternehmen</span></a> <span> &nbsp;</span>
             <a class="navigation--link" href="imker" title="Für Imker" aria-label="Für Imker" itemprop="url"><span itemprop="name"><FontAwesomeIcon icon={ faJar }   size="xl"> </FontAwesomeIcon> Für Imker</span></a>  
-
+           
         </div>
 
         <div class="container-center">
@@ -67,7 +61,12 @@ export const Login = (props) => {
         </div>
 
         <div class= "content-right">
-        <h3>Login  </h3>
+        <br />
+            <div class= "account">
+            <a class="navigation--link"> <span> <Link to="login">Login</Link></span></a>  <span>&nbsp;</span>   
+            <a class="navigation--link"> <span> <Link to="signup">Registrieren</Link></span></a> 
+            </div>
+            <br />
                 <form autoComplete="off" className='form-group' onSubmit={login}>
                 <label htmlFor="email">Email</label>
                 <input type="email" className='form-control' required
