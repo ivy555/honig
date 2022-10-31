@@ -6,6 +6,7 @@ import { faBuilding, faCartPlus, faCoffee, faHandHoldingHeart, faJar, faShopping
 import { cart } from 'react-icons-kit/entypo/cart';
 import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faUserTie } from '@fortawesome/fontawesome-free-solid';
+import   './login.css';
 
 export const Login = (props) => {
 
@@ -43,8 +44,8 @@ export const Login = (props) => {
             <div class="hfLogo"> </div>
             <div class="top_text">Willkommen bei Honigfinder - Deiner regionalen Honig-Plattform</div>
             <div class="account-menu">
-            <a class="navigation--link"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
-            <a class="navigation--link"> <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
+            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
+            <a class="navigation--link cartbutton" > <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
             </div>   
         </div>
 
@@ -59,7 +60,7 @@ export const Login = (props) => {
 
         <div class="background">
         </div>
-
+ 
         <div class= "content-right">
         <br />
             <div class= "account">
