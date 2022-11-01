@@ -10,6 +10,7 @@ import { CartContextProvider } from './Global/CartContext'
 import { Cart } from './Components/Cart'
 import { AddProducts } from './Components/AddProducts'
 import { Cashout } from './Components/Cashout'
+import { Roman } from './Components/Roman'
 
 export class App extends Component {
 
@@ -24,7 +25,7 @@ export class App extends Component {
             if (user) {
                 db.collection('SignedUpUsersData').doc(user.uid).get().then(snapshot => {
                     this.setState({
-                        user: snapshot.data().Name
+                        // user: snapshot.data().Name
                     })
                 })
             }
@@ -55,7 +56,9 @@ export class App extends Component {
                             <Route path="/addproducts" component={AddProducts} />
                             {/* cashout */}
                             <Route path='/cashout' component={() => <Cashout user={this.state.user} />} />
+                            <Route path="/roman" component={Roman}/>
                             <Route component={NotFound} />
+                            
                         </Switch>
                     </BrowserRouter>
                 </CartContextProvider>

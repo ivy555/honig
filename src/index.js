@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-// imported Login.css for Login.js
-import './Components/login.css';
-// imported signup.css for signup.js
-import './Components/signup.css';
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faCoffe} from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-free-solid'
-import { Login } from './Components/Login';
+
+
+
 
 ReactDOM.render(
 

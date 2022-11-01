@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { auth } from '../Config/Config'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faCartPlus, faCoffee, faHandHoldingHeart, faJar, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { cart } from 'react-icons-kit/entypo/cart';
+import { faHandHoldingHeart, faJar, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faUserTie } from '@fortawesome/fontawesome-free-solid';
 import   './login.css';
@@ -44,7 +43,7 @@ export const Login = (props) => {
             <div class="hfLogo"> </div>
             <div class="top_text">Willkommen bei Honigfinder - Deiner regionalen Honig-Plattform</div>
             <div class="account-menu">
-            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
+            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden<FontAwesomeIcon icon={faUser}> </FontAwesomeIcon></Link></span></a> <span>&nbsp;</span>   
             <a class="navigation--link cartbutton" > <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
             </div>   
         </div>

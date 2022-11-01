@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import { auth, db } from '../Config/Config'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faCartPlus, faCoffee, faHandHoldingHeart, faJar, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { cart } from 'react-icons-kit/entypo/cart';
-import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faHandHoldingHeart, faJar, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faUserTie } from '@fortawesome/fontawesome-free-solid';
+import  './signup.css';
 
 export const Signup = (props) => {
 
@@ -51,8 +50,8 @@ export const Signup = (props) => {
             <div class="hfLogo"> </div>
             <div class="top_text">Willkommen bei Honigfinder - Deiner regionalen Honig-Plattform</div>
             <div class="account-menu">
-            <a class="navigation--link"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
-            <a class="navigation--link"> <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
+            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden<FontAwesomeIcon icon={faUser}> </FontAwesomeIcon></Link></span></a> <span>&nbsp;</span>   
+            <a class="navigation--link cartbutton"> <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
             </div>   
         </div>
 
@@ -78,43 +77,54 @@ export const Signup = (props) => {
             
             <br />
             <form autoComplete="off" className='form-group' onSubmit={signup}>
-                <label htmlFor="name">Vorname</label>
-                <input type="text" className='form-control' required
+                <label htmlFor="firstname">Vorname</label>
+                <input type="text" id='firstname' name='firstname' className='form-control' required
                     onChange={(e) => setName(e.target.value)} value={name} />
                 <br />
-                {/*added this button new "lastname" */}
-                <label htmlFor="name">Nachname</label> 
-                <input type="text" className='form-control' required
+
+                {/*added this button "lastname" */}
+                <label htmlFor="lastname">Nachname</label> 
+                <input type="text" id='lastname' name='lastname' className='form-control' required
                     onChange={(e) => setName(e.target.value)} value={name} />
                 <br />
+
                 <label htmlFor="email">Email</label>
                 <input type="email" className='form-control' required
                     onChange={(e) => setEmail(e.target.value)} value={email} />
                 <br />
-                {/*added this button new "repeat mail" */}
+
+                {/*added this button "repeat mail" */}
                 <label htmlFor="email">Email wiederholen</label>
                 <input type="email" className='form-control' required
                     onChange={(e) => setEmail(e.target.value)} value={email} />
                 <br />
-                <label htmlFor="passowrd">Passwort</label>
+
+                <label htmlFor="password">Passwort</label>
                 <input type="password" className='form-control' required
                     onChange={(e) => setPassword(e.target.value)} value={password} />
                 <br />
-                {/*added this button new "repeat password" */}
-                <label htmlFor="passowrd">Passwort wiederholen</label>
+
+                {/*added this button "repeat password" */}
+                <label htmlFor="password">Passwort wiederholen</label>
                 <input type="password" className='form-control' required
                     onChange={(e) => setPassword(e.target.value)} value={password} />
                 <br />
+                
                 <div class="checkbox"> 
+                     <div class="checkboxAGB">
                     <input type="checkbox" id="AGB" name="AGB" value="AGB"/>
                     <label for="AGB"> Ich habe die <u>AGB</u> gelesen und akzeptiere sie.</label><br />
-                    
+                    </div> 
+
+                    <div class="checkboxNEWSLETTER">
                     <input type="checkbox" id="NEWSLETTER" name="NEWSLETTER" value="NEWSLETTER"/>
                     <label for="NEWSLETTER"> Ich möchte über aktuelle Angebote informiert werden.</label><br />
+                    </div>
                 </div> 
 
+
              
-                <button type="submit" className='btn btn-success btn-md mybtn'>REGISTRIEREN</button>
+                <button type="submit" className='registerbutton btn btn-success btn-md mybtn'>REGISTRIEREN</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}
             <br />
