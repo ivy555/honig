@@ -1,0 +1,213 @@
+
+.container {
+    color: rgb(0, 0, 0);
+    /* padding: 40px; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial;
+    text-align: center;
+  }
+  
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffbc11;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+::selection {
+    background: #00ffea;
+}
+
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+    color: #000;
+}
+
+.top_text{
+    font-size: larger;
+}
+
+.navigation--link{
+    color: #000;
+    display: inline-block;
+}
+
+.navigation-main{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hfLogo{
+    background-image: url('../images/honigfinder_logo.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.container-honigliebhaber{
+    display: flex;
+    background: antiquewhite;
+    padding: 10px;
+    border-radius: 40px;
+   
+}
+
+.container-left{
+    /* display: flex;
+    width: 65%;  */
+}
+
+.container-right{
+    /* display: flex;
+    width: 35%; */
+}
+
+.photoGermany img {
+    /* display: flex; */
+    /* float: left; */
+    /* flex: 0 0 auto; */
+}
+
+.germanyMap{
+    max-width:444px !important;
+    max-height:444px !important;
+    padding:5px;
+    object-fit: cover;
+}
+
+
+.search-description-title{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.search-description-text{
+    text-align: left;
+}
+
+.type-search{
+    font-size: large;
+    border-radius: 40px !important;
+    max-width: 450px;
+    border-color: #f3c324 !important;
+    /* display: block;
+    margin : 0 auto; */
+}
+
+button.searchButton{
+    background-color: #f3c324;
+    color: rgb(255, 255, 255);
+    border-color: #000000;
+    font-size: large;
+    border-radius: 40px;
+    max-width: 250px;
+     display: block;
+     margin-top: 7px;
+    /*margin : 0 auto; */
+}
+
+.beekeeper-nearby{
+    /* display: flex;
+    padding: 4px;*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.beekeeper-nearby-text{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.beekeepers{
+    /* width: 340px; */
+    height: 100%;
+    flex: 1 1 0;
+    /* background-color: #00ffea; */
+}
+
+.beekeeper1{
+    margin: 3px;
+    margin-bottom: 12px;
+    max-width: 155px;
+    min-width: 140px;
+}
+
+.beekeeper2{
+    margin: 3px; 
+    margin-bottom: 12px;
+    max-width: 155px; 
+    min-width: 140px;
+}
+.beekeeper3{
+    margin: 3px; 
+    margin-bottom: 12px;
+    max-width: 155px;
+    min-width: 140px; 
+}
+
+.beekeeper4{
+    margin: 3px;
+    margin-bottom: 12px;
+    max-width: 155px;
+    min-width: 140px;
+}
+
+.beekeeper5{
+    margin: 3px;
+    margin-bottom: 12px;
+    max-width: 155px;
+    min-width: 140px;
+}
+
+.beekeeper6{
+    margin: 3px;
+    margin-bottom: 12px;
+    max-width: 155px;
+    min-width: 140px;
+}
+
+input,
+select,
+textarea {
+    background-color: #272D35;
+    border: 0px solid white;
+    color: #d4d4d4;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(47, 55, 66);
+    border: 0px solid white;
+    color: #FFF;
+}
+
+

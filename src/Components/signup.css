@@ -113,6 +113,8 @@
       color: #000;
       border-color: #000000;
       font-size: large;
+      width: 100%;
+      border-radius: 40px;
 
   }
 
@@ -131,6 +133,8 @@
     border-color: #000;
     font-size: larger;
   }
+
+
 
   #AGB{
     justify-content: center;

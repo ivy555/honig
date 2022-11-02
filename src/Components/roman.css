@@ -122,22 +122,46 @@ label{
 
 .photos {
     display: flex;
-    /* background-color: #000; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: stretch;
-    padding: 2;
-    max-width: 980px;
+    max-width: 1200px;
 }
 
 .photos img {
-    display: block;
-    float: left;
-    flex: 0 0 auto;
-    gap: 5px;
-    /* background-color: #fff; */
+    display: flex;
+    /* float: left; */
+    /* flex: 0 0 auto; */
     border-radius: 30px;
+}
+
+.picture1{
+    max-width:444px !important;
+    max-height:444px !important;
+    padding:5px;
+    object-fit: cover;
+}
+
+.picture2{
+    max-width:444px !important;
+    max-height:444px !important;
+    padding:5px; 
+    object-fit: cover;
+}
+
+.picture3{
+    max-width:444px !important;
+    max-height:444px !important;
+    padding:5px;
+    object-fit: cover;
+}
+
+.picture4{
+    max-width:444px !important;
+    max-height:444px !important;
+    padding:5px;
+    object-fit: cover;
 }
 
 .seller_icon img{
@@ -159,20 +183,6 @@ label{
     padding-right: 40px;
     width: 40%;
     border-radius: 40px;
-}
-
-.description{
-    line-height: 1.3em;
-}
-
-.seller_label{
-    color:rgb(146, 146, 146);
-    font-family: "Times New Roman", Times, serif;
-}
-
-.seller_name{
-    font-family: "Times New Roman", Times, serif; 
-    font-size: 4rem
 }
 
 
@@ -215,46 +225,5 @@ label{
 
 
 
-.photo-gallery {
-    color:#313437;
-    background-color:#fff;
-  }
-  
-  .photo-gallery p {
-    color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
-    .photo-gallery h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
-    }
-  }
-  
-  .photo-gallery .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-    margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-    padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-    padding-bottom:30px;
-  }
-  
+
   

@@ -50,10 +50,10 @@ export const Roman = () => {
 
         <div class="container-pictures">
         <div class="photos">
-            <img src={picture1}/>
-            <img src={picture2}/>
-            <img src={picture3}/>
-            <img src={picture4}/>
+            <img className='picture1'src={picture1}/>
+            <img className='picture2'src={picture2}/>
+            <img className='picture3'src={picture3}/>
+            <img className='picture4'src={picture4}/>
         </div>
         </div>
 

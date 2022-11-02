@@ -11,6 +11,7 @@ import { Cart } from './Components/Cart'
 import { AddProducts } from './Components/AddProducts'
 import { Cashout } from './Components/Cashout'
 import { Roman } from './Components/Roman'
+import { Honigliebhaber } from './Components/Honigliebhaber'
 
 export class App extends Component {
 
@@ -57,6 +58,7 @@ export class App extends Component {
                             {/* cashout */}
                             <Route path='/cashout' component={() => <Cashout user={this.state.user} />} />
                             <Route path="/roman" component={Roman}/>
+                            <Route path="/honigliebhaber" component={Honigliebhaber}/>
                             <Route component={NotFound} />
                             
                         </Switch>

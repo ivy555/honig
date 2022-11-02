@@ -106,16 +106,20 @@ button.loginbutton{
   color: #000;
   border-color: #000000;
   font-size: large;
+  height: 45px;
+  border-radius: 40px;
+  width: 100%;
 }
 
-.btn{
+.btns{
   width: 100%;
   background-color: #ffbc11;
+  font-size: 0.9rem !important;
 }
 
 
 /* testing color change on button hover */
-.btn-success:hover{
+.btns-success:hover{
   background-color: #3511ff !important ;
   color: rgb(255, 0, 0)!important ; 
   border-color: #000000!important ;

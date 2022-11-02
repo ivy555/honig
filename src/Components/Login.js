@@ -100,9 +100,9 @@ export const Login = (props) => {
                     Sign up with Facebook
                 </button> */}
 
-        <button class="btn login-google"   type="submit"> <FontAwesomeIcon icon={ faGoogle }   size="xl"> </FontAwesomeIcon> Mit Google Fortfahren </button>
-        <button class="btn login-facebook" type="submit"> <FontAwesomeIcon icon={ faFacebook } size="xl"> </FontAwesomeIcon> Mit Facebook Fortfahren</button>
-        <button class="btn login-apple"    type="submit"> <FontAwesomeIcon icon={ faApple }    size="xl"> </FontAwesomeIcon> Mit Apple Fortfahren</button> 
+        <button class="btns login-google"   type="submit"> <FontAwesomeIcon icon={ faGoogle }   size="xl"> </FontAwesomeIcon> Mit Google Fortfahren </button>
+        <button class="btns login-facebook" type="submit"> <FontAwesomeIcon icon={ faFacebook } size="xl"> </FontAwesomeIcon> Mit Facebook Fortfahren</button>
+        <button class="btns login-apple"    type="submit"> <FontAwesomeIcon icon={ faApple }    size="xl"> </FontAwesomeIcon> Mit Apple Fortfahren</button> 
         </div>
         </div>
 
