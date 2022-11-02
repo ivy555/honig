@@ -77,25 +77,14 @@ a:active {
    
 }
 
-.container-left{
-    /* display: flex;
-    width: 65%;  */
-}
-
-.container-right{
-    /* display: flex;
-    width: 35%; */
-}
-
-.photoGermany img {
-    /* display: flex; */
-    /* float: left; */
-    /* flex: 0 0 auto; */
+.container-right img{
+    display: flex;
+    height: auto;
 }
 
 .germanyMap{
-    max-width:444px !important;
-    max-height:444px !important;
+    max-width:100%; width:100%;
+    max-height:1200px !important;
     padding:5px;
     object-fit: cover;
 }
