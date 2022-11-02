@@ -10,25 +10,6 @@
     text-align: center;
   }
   
-a:link {
-    color: rgb(0, 0, 0);
-}
-
-/* visited link */
-a:visited {
-    color: rgb(0, 0, 0);
-}
-
-/* mouse over link */
-a:hover {
-    color: #ffbc11;
-}
-
-/* selected link */
-a:active {
-    color: blue;
-}
-
 ::selection {
     background: #00ffea;
 }
@@ -89,7 +70,6 @@ a:active {
     object-fit: cover;
 }
 
-
 .search-description-title{
     font-size: larger;
     font-weight: bolder;
@@ -104,8 +84,6 @@ a:active {
     border-radius: 40px !important;
     max-width: 450px;
     border-color: #f3c324 !important;
-    /* display: block;
-    margin : 0 auto; */
 }
 
 button.searchButton{
@@ -117,13 +95,9 @@ button.searchButton{
     max-width: 250px;
      display: block;
      margin-top: 7px;
-    /*margin : 0 auto; */
 }
 
 .beekeeper-nearby{
-    /* display: flex;
-    padding: 4px;*/
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -136,10 +110,8 @@ button.searchButton{
 }
 
 .beekeepers{
-    /* width: 340px; */
     height: 100%;
     flex: 1 1 0;
-    /* background-color: #00ffea; */
 }
 
 .beekeeper1{
