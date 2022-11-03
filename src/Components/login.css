@@ -52,13 +52,30 @@ a:active {
   display: inline-block;
 }
 
+.signupbutton{
+  border-style: solid;
+  border-color: #ffbc11;
+  border-radius: 25px;
+  padding: 7px;
+  font-size: large;
+}
+
+.cartbutton{
+  border-style: solid;
+  border-color: #ffbc11;
+  border-radius: 25px;
+  padding: 7px;
+  font-size: large;
+}
+
+
 .navigation-main{
   font-size: larger;
   font-weight: bold;
 }
 
 .account{
-  font-size: 2rem
+  font-size: 1.5rem
 }
 
 .register-button{
@@ -88,12 +105,25 @@ button.loginbutton{
   background-color: #ffbc11;
   color: #000;
   border-color: #000000;
-  font-size: larger;
+  font-size: large;
+  height: 45px;
+  border-radius: 40px;
+  width: 100%;
 }
 
-.btn{
+.btns{
   width: 100%;
   background-color: #ffbc11;
+  font-size: 0.9rem !important;
+}
+
+
+/* testing color change on button hover */
+.btns-success:hover{
+  background-color: #3511ff !important ;
+  color: rgb(255, 0, 0)!important ; 
+  border-color: #000000!important ;
+  font-size: large!important ;
 }
 
 input,
@@ -148,7 +178,7 @@ textarea:focus {
 
 .login-facebook {
   font-weight: bold;
-  color: #FFF;
+  color: #FFF !important;
   position: relative;
   border-radius: 45px;
   bottom: 0px;
@@ -163,7 +193,7 @@ textarea:focus {
 
 .login-apple {
   font-weight: bold;
-  color: #FFF;
+  color: #FFF !important;
   position: relative;
   border-radius: 45px;
   margin-bottom: 100px;

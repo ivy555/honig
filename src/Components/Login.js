@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { auth } from '../Config/Config'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faCartPlus, faCoffee, faHandHoldingHeart, faJar, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { cart } from 'react-icons-kit/entypo/cart';
+import { faHandHoldingHeart, faJar, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faApple, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faUserTie } from '@fortawesome/fontawesome-free-solid';
 import   './login.css';
@@ -44,7 +43,7 @@ export const Login = (props) => {
             <div class="hfLogo"> </div>
             <div class="top_text">Willkommen bei Honigfinder - Deiner regionalen Honig-Plattform</div>
             <div class="account-menu">
-            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden</Link></span></a> <span>&nbsp;</span>   
+            <a class="navigation--link signupbutton"> <span> <Link to="login">Anmelden<FontAwesomeIcon icon={faUser}> </FontAwesomeIcon></Link></span></a> <span>&nbsp;</span>   
             <a class="navigation--link cartbutton" > <span> <Link to="shoppingcart">Warenkorb<FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon></Link></span></a> 
             </div>   
         </div>
@@ -101,9 +100,9 @@ export const Login = (props) => {
                     Sign up with Facebook
                 </button> */}
 
-        <button class="btn login-google"   type="submit"> <FontAwesomeIcon icon={ faGoogle }   size="xl"> </FontAwesomeIcon> Mit Google Fortfahren </button>
-        <button class="btn login-facebook" type="submit"> <FontAwesomeIcon icon={ faFacebook } size="xl"> </FontAwesomeIcon> Mit Facebook Fortfahren</button>
-        <button class="btn login-apple"    type="submit"> <FontAwesomeIcon icon={ faApple }    size="xl"> </FontAwesomeIcon> Mit Apple Fortfahren</button> 
+        <button class="btns login-google"   type="submit"> <FontAwesomeIcon icon={ faGoogle }   size="xl"> </FontAwesomeIcon> Mit Google Fortfahren </button>
+        <button class="btns login-facebook" type="submit"> <FontAwesomeIcon icon={ faFacebook } size="xl"> </FontAwesomeIcon> Mit Facebook Fortfahren</button>
+        <button class="btns login-apple"    type="submit"> <FontAwesomeIcon icon={ faApple }    size="xl"> </FontAwesomeIcon> Mit Apple Fortfahren</button> 
         </div>
         </div>
 

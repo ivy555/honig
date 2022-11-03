@@ -1,0 +1,91 @@
+.input-gender{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-firstname{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-lastname{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-mail{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-telefon{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-title{
+    margin: 8px;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.input-text{
+    margin: 8px;
+    height: 170px;
+    width: 100%;
+    border-radius: 40px;
+    background: antiquewhite;
+    padding: 13px;
+    color: black;
+}
+
+.btn-send2{
+    width: 150px;
+    height: 40px !important;
+    border-radius: 30px;
+    height: auto;
+    background: orange;
+}
+
+input:focus {
+    background-color: antiquewhite;
+  }
+
+.input-text:focus {
+background-color: antiquewhite;
+}
+
+.input-gender:focus {
+background-color: antiquewhite;
+border-radius: 30px;
+color: black;
+}

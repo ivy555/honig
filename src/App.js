@@ -10,6 +10,10 @@ import { CartContextProvider } from './Global/CartContext'
 import { Cart } from './Components/Cart'
 import { AddProducts } from './Components/AddProducts'
 import { Cashout } from './Components/Cashout'
+import { Roman } from './Components/Roman'
+import { Honigliebhaber } from './Components/Honigliebhaber'
+import { Contact } from './Components/Contact'
+import { Impressum } from './Components/Impressum'
 
 export class App extends Component {
 
@@ -24,7 +28,7 @@ export class App extends Component {
             if (user) {
                 db.collection('SignedUpUsersData').doc(user.uid).get().then(snapshot => {
                     this.setState({
-                        user: snapshot.data().Name
+                        // user: snapshot.data().Name
                     })
                 })
             }
@@ -55,7 +59,12 @@ export class App extends Component {
                             <Route path="/addproducts" component={AddProducts} />
                             {/* cashout */}
                             <Route path='/cashout' component={() => <Cashout user={this.state.user} />} />
+                            <Route path="/roman" component={Roman}/>
+                            <Route path="/honigliebhaber" component={Honigliebhaber}/>
+                            <Route path="/contact" component={Contact}/>
+                            <Route path="/impressum" component={Impressum}/>
                             <Route component={NotFound} />
+                            
                         </Switch>
                     </BrowserRouter>
                 </CartContextProvider>
